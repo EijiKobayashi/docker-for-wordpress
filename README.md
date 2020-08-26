@@ -47,14 +47,26 @@ $ docker-compose ps
 $ docker-compose down
 ```
 
-#### コンテナの削除
+#### コンテナの全削除
 
 ```
-$ docker rm -f [コンテナID]
+$ docker rm -f $(docker ps -a -q)
 ```
 
-#### コンテナIDの一覧取得
+#### コンテナの一覧取得
 
 ```
 $ docker ps -a
+```
+
+#### イメージの全削除
+
+```
+$ docker rmi -f $(docker images -q)
+```
+
+#### イメージの一覧取得
+
+```
+$ docker images -a
 ```
