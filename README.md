@@ -28,8 +28,8 @@ $ docker-compose build --no-cache
 
 #### 起動
 
-- Web: [localhost:3000](http//localhost:3000)
-- phpMyAdmin: [localhost:8080](http://localhost:8080)
+- Web: [http//localhost:3000](http//localhost:3000)
+- phpMyAdmin: [http//localhost:8080](http://localhost:8080)
 
 ```
 $ docker-compose up -d
@@ -45,4 +45,16 @@ $ docker-compose ps
 
 ```
 $ docker-compose down
+```
+
+#### コンテナの削除
+
+```
+$ docker rm -f [コンテナID]
+```
+
+#### コンテナIDの一覧取得
+
+```
+$ docker ps -a
 ```
